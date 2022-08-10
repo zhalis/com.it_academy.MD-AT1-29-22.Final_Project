@@ -2,3 +2,6 @@
 *.class
 .idea
 target/
+allure-results/
+.allure/
+build/
