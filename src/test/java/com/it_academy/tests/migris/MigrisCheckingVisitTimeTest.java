@@ -5,6 +5,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.it_academy.tests.framework.driver.SelenideWebDriverDiscovery;
+import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -36,6 +37,7 @@ public class MigrisCheckingVisitTimeTest {
     }
 
     @Test
+    @Description("checking free date")
     public void testCheckFreeTime() {
         PERMISSION_TO_USE_COOKIES.shouldBe(Condition.visible, Duration.ofSeconds(60)).click();
         BOOK_A_VISIT_BUTTON.shouldBe(Condition.visible, Duration.ofSeconds(60)).click();
