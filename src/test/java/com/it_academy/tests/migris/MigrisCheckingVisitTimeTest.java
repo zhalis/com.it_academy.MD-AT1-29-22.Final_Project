@@ -26,7 +26,7 @@ public class MigrisCheckingVisitTimeTest {
 
     private static final SelenideElement INSTITUTION = $x("//input[@id='mat-input-1']");
     private static final SelenideElement ADDRESS = $x("//span[contains(text(),'Vilnius, Konstitucijos pr. 3')]");
-    private static final SelenideElement SOONEST_POSSIBLE_VISIT_DATE = $x("//div[contains(text(),'Artimiausia galima vizito data: 2022-09-19')]");
+    private static final SelenideElement SOONEST_POSSIBLE_VISIT_DATE = $x("//div[contains(text(),'Artimiausia galima vizito data:')]");
 
     @BeforeEach
     public void openMigrisWebSite() {
